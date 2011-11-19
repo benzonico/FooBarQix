@@ -15,17 +15,17 @@ public class FooBarQix {
 	
 	
 	public String fooBarQixiseInteger(int i){
-		String result = "";
+		StringBuffer result = new StringBuffer("");
 		for(EnumFooBarQix value: EnumFooBarQix.values()){
-			result += divisible(i, value);
+			result.append(divisible(i, value));
 		}
 		
-		result+=replaceChars(Integer.toString(i));
+		result.append(replaceChars(Integer.toString(i)));
 		
 		if("".equals(result)){
-			result += i;
+			result.append(i);
 		}
-		return result;
+		return result.toString();
 	}
 	
 	public String divisible(int i, EnumFooBarQix enumValue){
