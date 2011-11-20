@@ -22,7 +22,7 @@ public class FooBarQix {
 		
 		result.append(replaceChars(Integer.toString(i)));
 		
-		if("".equals(result)){
+		if(result.length()==0){
 			result.append(i);
 		}
 		return result.toString();
