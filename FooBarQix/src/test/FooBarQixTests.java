@@ -10,6 +10,12 @@ import org.junit.Test;
 public class FooBarQixTests {
 
 	@Test
+	public void testFooBarQixiseInteger22() {
+		FooBarQix fooBarQix = new FooBarQix();
+		assertEquals("22",fooBarQix.fooBarQixiseInteger(22));
+	}
+	
+	@Test
 	public void testFooBarQixiseInteger35() {
 		FooBarQix fooBarQix = new FooBarQix();
 		assertEquals("BarQixFooBar",fooBarQix.fooBarQixiseInteger(35));
